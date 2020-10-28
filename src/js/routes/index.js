@@ -30,11 +30,13 @@ import Landing from './process-site/Landing'
 
 const routes = (
 	<Switch>
-		<Route exact path={`/`} component={Landing}/>
-		<Route path={`/video-gallery`} component={VideoGallery}/>
-		<Route path={`/parallax-story`} component={ParallaxStory}/>
-		<Route path={`/preloader`} component={Preloader}/>
-		<Route path={`/navigation`} component={RunwayNav}/>
+		<Route exact path="/" component={Landing}/>
+		<Route exact path="/american-made/" component={Landing}/>
+
+		<Route path="/video-gallery" component={VideoGallery}/>
+		<Route path="/parallax-story" component={ParallaxStory}/>
+		<Route path="/preloader" component={Preloader}/>
+		<Route path="/navigation" component={RunwayNav}/>
 	</Switch>
 )
 

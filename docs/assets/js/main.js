@@ -51097,6 +51097,7 @@ var routes = _react2.default.createElement(
 	_reactRouter.Switch,
 	null,
 	_react2.default.createElement(_reactRouter.Route, { exact: true, path: '/', component: _Landing2.default }),
+	_react2.default.createElement(_reactRouter.Route, { exact: true, path: '/american-made/', component: _Landing2.default }),
 	_react2.default.createElement(_reactRouter.Route, { path: '/video-gallery', component: _VideoGallery2.default }),
 	_react2.default.createElement(_reactRouter.Route, { path: '/parallax-story', component: _ParallaxStory2.default }),
 	_react2.default.createElement(_reactRouter.Route, { path: '/preloader', component: _Preloader2.default }),
