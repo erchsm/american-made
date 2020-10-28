@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	// width: 100%;
+}
+
+body {
+	@include texture();
+	background-color: $brand-black;
+	background-blend-mode: difference;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+	@include texture();
+	background-color: darken($brand-black, 2%);
+	background-blend-mode: difference;
+	padding: 48px 32px;
+	margin: 32px;
+	border-radius: 4px;
+
+	h1, h2, h3, h4, h5 {
+		// font-family: $font-secondary;
+		&:after {
+			
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+}

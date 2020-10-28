@@ -1,0 +1,56 @@
+$bp-xlarge: 1800px;
+$bp-large: 1400px;
+$bp-desktop: 1100px;
+$bp-medium: 800px;
+$bp-small: 600px;
+$bp-xsmall: 480px;
+
+$font-primary: 'Compacta-BT', Helvetica, Arial, sans-serif;
+$font-secondary: 'Proxima Nova', Helvetica, Arial, sans-serif;
+
+// Animations
+$easing: cubic-bezier(0.215, 0.61, 0.355, 1);
+$easing2: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$easing3: cubic-bezier(.19, 1, .22, 1);
+
+$duration: 0.9s;
+$delay: 0.3s;
+
+// Colors
+$brand-red: #BE0C36;
+$brand-grey: #3A3A3A;
+$brand-light-grey: #979997;
+$brand-off-white: #FFFEED;
+$brand-white: #FFFFF7;
+
+$brand-blue-dark: #18BCD0;
+$brand-blue-light: lighten($brand-blue-dark, 30%); 
+$brand-blue-lightest: lighten($brand-blue-dark, 50%); 
+
+$brand-red-light: #E23D28; 
+$brand-red-medium: #A12219;
+$brand-red-dark: darken($brand-red-light, 20%);
+$brand-red-darkest: darken($brand-red-light, 30%);
+$brand-red-lightest: lighten($brand-red-light, 10%); 
+
+$brand-black: #1B1B1B;
+$brand-darker-black: darken($brand-black, 5%);
+
+$brand-gray: darken($brand-blue-dark, 40%); 
+$brand-darkest-gray: lighten($brand-black, 5%);
+$brand-dark-gray: lighten($brand-black, 10%);
+
+$brand-tan: #E7DECC;
+
+$brand-blue: #404851;
+$brand-blue-light: #254390;
+$brand-blue-brand: #0A2948;
+$brand-electric-blue: #A1D2dC;
+$brand-synopsis-text: #625446;
+
+// Shadows
+$text-shadow-light: 1px 1px rgba($brand-black, .18);
+$text-shadow-medium: 1px 1px rgba($brand-black, .24);
+$text-shadow-dark: 1px 1px rgba($brand-black, .32);
+$box-shadow: 1px 1px 0 rgba($brand-black, .18);
+

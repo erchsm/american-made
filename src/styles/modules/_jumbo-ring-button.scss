@@ -1,0 +1,129 @@
+@keyframes wobble-vertical {
+	16.65% {
+		transform: translateY(calc(8px * 0.5)) rotate(180deg);
+	}
+	33.3% {
+		transform: translateY(calc(-6px * 0.5)) rotate(180deg);
+	}
+	49.95% {
+		transform: translateY(calc(4px * 0.5)) rotate(180deg);
+	}
+	66.6% {
+		transform: translateY(calc(-2px * 0.5)) rotate(180deg);
+	}
+	83.25% {
+		transform: translateY(calc(1px * 0.5)) rotate(180deg);
+	}
+	100% {
+		transform: translateY(calc(0px * 0.5)) rotate(180deg);
+	}
+}
+
+$jumbo-ring-classname: jumbo-ring-button;
+
+.#{$jumbo-ring-classname} {
+	cursor: pointer;
+	position: relative;
+	width: 102px;
+	height: 102px;
+
+	i {
+		font-size: 32px;
+		transform: rotate(180deg);
+		text-align: center;
+		width: 100%;
+		animation-timing-function: $easing;
+		animation: wobble-vertical 1.2s infinite;
+		margin-top: 4px;
+	}
+
+	&__bg--inner,
+	&__bg--middle,
+	&__bg--outer {
+		transform-origin: 50% 50%;
+		transition: transform $easing3 ($duration * 1.5);
+		transform: scale(0);
+	}
+
+	&--animate {
+		.#{$jumbo-ring-classname}__bg--inner, 
+		.#{$jumbo-ring-classname}__bg--middle, 
+		.#{$jumbo-ring-classname}__bg--outer {
+			transform: scale(1);
+		}
+		.#{$jumbo-ring-classname}__text, 
+		.#{$jumbo-ring-classname}__fg i {
+			opacity: 1;
+		}
+	}
+}
+
+.jumbo-ring-button__bg--outer {
+	width: 100%;
+	height: 100%;
+	background-color: rgba($brand-red-medium, .3);
+	border-radius: 52px;
+}
+
+.jumbo-ring-button__bg--inner,
+.jumbo-ring-button__bg--middle {
+	background-size: cover;
+	border-radius: 52px
+}
+
+.jumbo-ring-button__bg--middle {
+	background-color: $brand-red-medium;
+	// @include red-splatter();
+	position: absolute;
+	border: 1px solid $brand-off-white;
+	opacity: .75;
+	left: 8%;
+	top: 8%;
+	width: 84%;
+	height: 84%
+}
+
+.jumbo-ring-button__bg--inner {
+	position: absolute;
+	border: 1px solid rgba($brand-off-white, .15);
+	left: 13%;
+	top: 13%;
+	width: 74%;
+	height: 74%
+}
+
+.jumbo-ring-button__bg--outer,
+.jumbo-ring-button__fg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.jumbo-ring-button__fg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.jumbo-ring-button__text,
+.jumbo-ring-button i {
+	opacity: 0;
+	color: $brand-off-white;
+	text-shadow: none;
+}
+
+.jumbo-ring-button__text {
+	width: 100%;
+	margin-top: 16px;
+	margin-left: .085em;
+}
+
+.jumbo-ring-button__divider {
+	width: 10px;
+	height: 1px;
+	background-color: $brand-off-white;
+	margin: 4px 0;
+	opacity: .25;
+}

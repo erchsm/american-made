@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>uEA47-todo-check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="uEA47-todo-check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M17.4677074,26.7760619 L25.563914,10.2945519 C25.9535222,9.50142354 26.9123196,9.17430578 27.7054481,9.56391398 C28.4985765,9.95352219 28.8256942,10.9123196 28.436086,11.7054481 L19.1027224,30.7054481 C18.5562979,31.8178086 17.0072039,31.9133935 16.3281716,30.8766482 L11.6615352,23.7516366 C11.1773758,23.0124229 11.3841381,22.0206831 12.1233518,21.5365237 C12.8625655,21.0523642 13.8543054,21.2591266 14.3384648,21.9983403 L17.4677074,26.7760619 Z" id="Check" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

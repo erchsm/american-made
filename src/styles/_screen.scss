@@ -1,0 +1,153 @@
+@mixin grid-at-bp($bp) {
+	.grid {
+		&__item {
+			&--hide-bp-#{$bp} {
+				display: none;
+			}
+			&--col-1-#{$bp} {
+				min-width: 8.33%;
+				width: 8.33%;
+			}
+			&--col-2-#{$bp} {
+				min-width: 16.66%;
+				width: 16.66%;
+			}
+			&--col-3-#{$bp} {
+				min-width: 25%;
+				width: 25%;
+			}
+			&--col-4-#{$bp} {
+				min-width: 33.33%;
+				width: 33.33%;
+			}
+			&--col-5-#{$bp} {
+				min-width: 41.66%;
+				width: 41.66%;
+			}
+			&--col-6-#{$bp} {
+				min-width: 50%;
+				width: 50%;
+			}
+			&--col-7-#{$bp} {
+				min-width: 58.33%;
+				width: 58.33%;
+			}
+			&--col-8-#{$bp} {
+				min-width: 66.66%;
+				width: 66.66%;
+			}
+			&--col-9-#{$bp} {
+				min-width: 75%;
+				width: 75%;
+			}
+			&--col-10-#{$bp} {
+				min-width: 83.33%;
+				width: 83.33%;
+			}
+			&--col-11-#{$bp} {
+				min-width: 91.66%;
+				width: 91.66%;
+			}
+			&--col-12-#{$bp} {
+				min-width: 100%;
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: $bp-desktop) {
+	h1 {
+		font-size: 72px;
+		line-height: 1.1;
+	}
+	h2 {
+		font-size: 48px;
+	}
+	h3 {
+		font-size: 40px;
+	}
+
+	.grid {
+		padding: 0 24px;
+	}
+
+	@include grid-at-bp(desktop);
+}
+
+@media screen and (max-width: $bp-medium) {
+	.grid {
+		padding: 0 12px;
+
+		&__item {
+			&--hide-medium {
+				display: none;
+			}   
+			&--col-1-medium {
+				width: 8.33%;
+			}
+			&--col-2-medium {
+				width: 16.66%;
+			}
+			&--col-3-medium {
+				width: 25%;
+			}
+			&--col-4-medium {
+				width: 33.33%;
+			}
+			&--col-5-medium {
+				width: 41.66%;
+			}
+			&--col-6-medium {
+				width: 50%;
+			}
+			&--col-7-medium {
+				width: 58.33%;
+			}
+			&--col-8-medium {
+				width: 66.66%;
+			}
+			&--col-9-medium {
+				width: 75%;
+			}
+			&--col-10-medium {
+				width: 83.33%;
+			}
+			&--col-11-medium {
+				width: 91.66%;
+			}
+			&--col-12-medium {
+				width: 100%;
+			}  
+		}
+	}
+
+	.card {
+		margin-right: 0;
+	}
+
+	h1 {
+		font-size: 48px;
+		line-height: 48px;
+	}
+	h2 {
+		font-size: 32px;
+		letter-spacing: 0.006em;
+	}
+	input {
+		font-size: 32px;
+	}
+	h3 {
+		font-size: 32px;
+	}
+	h4 {
+		font-size: 28px;
+	}
+	blockquote {
+		font-size: 20px;
+	}
+	p {
+		font-size: 16px;
+	}
+}

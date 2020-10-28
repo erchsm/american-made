@@ -1,0 +1,93 @@
+@mixin button() {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 43px;
+	height: 43px;
+	padding: 0;
+	font-size: 12px;
+	color: $brand-white;
+	border-radius: 50%;
+	outline: none;
+	background: rgba(black, .5);
+	border: solid 1px mix($brand-white, black, 40%);
+	text-align: center;
+	line-height: 1;
+	
+	&:after {
+		position: absolute;
+		background: rgba(black, .25);
+		border: solid 1px mix($brand-white, black, 24%);
+		content: "";
+		display: block;
+
+		border-radius: 50%;
+		opacity: 1;
+		min-width: 40px;
+		min-height: 40px;
+	}
+}
+
+@mixin close-button() {
+	@include button();
+	transition: transform .6s $easing3, top .6s $easing3 1.2s;
+	transform: scale3d(.9, .9, 1) rotate(90deg);
+	font-size: 19px;
+
+	
+	i {
+		top: auto;
+		// margin-bottom: 1px;
+	}
+
+	
+	&:after {
+		left: -1px;
+		top: -1px;
+		transform-origin: center;
+		transition: all ($duration / 2) $easing;
+		transform: scale3d(1.3, 1.3, 1);
+	}
+
+	&:hover {
+		border-color: $brand-white;
+		transform: scale3d(1, 1, 1) rotate(0);
+
+		&:after {
+			transform: scale3d(1.4, 1.4, 1);
+		}
+	}
+}
+
+@mixin ring-button {
+	cursor: pointer;
+	min-width: 43px;
+	min-height: 43px;
+	padding: 0;
+	font-size: 11px;
+	color: $brand-white;
+	border-radius: 50%;
+	outline: none;
+	background: rgba(black, .5);
+	border: solid 1px mix($brand-white, black, 24%);
+	text-align: center;
+	line-height: 1;
+	
+	.ring-button-inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		background: rgba(black, .25);
+		border: solid 1px mix($brand-white, black, 30%);
+
+		border-radius: 50%;
+		opacity: 1;
+		margin-left: 3px;
+		margin-top: 3px;
+		padding-bottom: 1.5px;
+		min-width: 35px;
+		min-height: 35px;
+	}
+}

@@ -1,0 +1,242 @@
+.runway-navigation {
+
+	section {
+		height: 100vh;
+		@include texture();
+
+		&:first-of-type {
+			background-color: $brand-electric-blue;
+		}
+		&:nth-of-type(2) {
+			background-color: darken($brand-electric-blue, 3%);
+		}
+		&:nth-of-type(3) {
+			background-color: darken($brand-electric-blue, 6%);
+		}
+		&:nth-of-type(4) {
+			background-color: darken($brand-electric-blue, 9%);
+		}
+		&:nth-of-type(5) {
+			background-color: darken($brand-electric-blue, 12%);
+		}
+		&:nth-of-type(6) {
+			background-color: darken($brand-electric-blue, 15%);
+		}
+	}
+
+	.navbar-wrapper {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: $brand-white;
+		font-family: $font-primary;
+		text-shadow: $text-shadow-light;
+
+		.plane-image {
+			transition: all $duration $easing;
+			margin-bottom: 24px;
+		}
+
+		.top-line {
+			transition: all $easing $duration;
+			transform: scale3d(0,1,1);
+			width: 32px;
+			height: 1px;
+			background-color: lighten($brand-red, 2%);
+			margin-bottom: 16px;
+		}
+
+		.nav-right .top-line {
+			margin-right: 3px;
+			transform-origin: right;
+		}
+
+		.nav-left .top-line {
+			transform-origin: left;
+		}
+
+		&--hover-left {
+			.nav-left {
+				.top-line {
+					transition: all $easing2 $duration;
+					transform: scale3d(1,1,1);
+				}
+			}
+			.plane-image {
+				transform: rotate(-45deg);
+			}
+		}
+
+		&--hover-right {
+			.nav-right {
+				.top-line {
+					transition: all $easing2 $duration;
+					transform: scale3d(1,1,1);
+				}
+			}
+			.plane-image {
+				transform: rotate(45deg);
+			}
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				list-style: none;
+			}
+		}
+
+		h1 {
+			width: 100%;
+			font-size: 26px;
+			font-weight: 300;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			line-height: 1;
+			margin: 0;
+		}
+
+		h6 {
+			transition: transform $easing $duration;
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin: 0 14px;
+			font-weight: 400;
+			text-align: left;
+			text-shadow: $text-shadow-dark;
+		}
+
+		i {
+			font-size: 40px;
+		}
+
+		a {
+			cursor: pointer;
+		}
+
+		.circle {
+			position: absolute;
+			left: 50%;
+			border-radius: 50%;
+			transform: translateX(-2px);
+			width: 5px;
+			height: 5px;
+			margin: 0 0 0 0px;
+			background: $brand-white;
+			box-shadow: $box-shadow;
+			z-index: -1;
+		}
+
+		.nav {
+			display: flex;
+		}
+
+		.navbar-top {
+			margin-bottom: 16px;
+
+			li {
+				.btn_nav_inner {
+					cursor: pointer;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-end;
+				}
+
+				&:first-child {
+					margin-right: 24px;
+
+					.btn_nav_inner {
+						align-items: flex-start;
+					}
+				}
+			}
+		}
+
+		.navbar-main {
+			position: relative;
+			flex-direction: column;
+			align-items: center;
+
+			.nav-inner {
+				transform: none;
+				position: relative;
+				display: flex;
+				align-items: center;
+				width: 180px;
+				height: 15px;
+
+				.left, .right {
+					transition: all $easing $duration;
+					position: absolute;
+					width: 50%;
+					height: 100%;
+				}
+			}
+
+			li {
+				margin-bottom: 32px;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+
+				.active {
+					.nav-inner {
+						.left {
+							transform: translate3d(90px, 0, 0);
+							h6 {
+								left: 0;
+							}
+						}
+						.right {
+							opacity: 1;
+						}
+					}
+					@for $i from 1 through 12 {
+						&.active-#{$i} {
+							.nav-inner .right {
+								transform: translate3d((36px + (6 * $i)), 0, 0);
+							}
+						}
+					}
+				}
+			}
+
+			.right {
+				// transition: all $easing $duration @delay;
+				position: absolute; 
+				left: 50%;
+				opacity: 0;
+				// transform-origin: right;
+				transform: translate3d(0,0,0);
+
+				.line {
+					top: 50%;
+					// margin: 0 9px;
+					// transition: all $easing $duration;
+					position: absolute;
+					background: $brand-white;
+					box-shadow: $box-shadow;
+					height: 1px;
+					width: 24px;
+				}
+			}
+
+			.cd-timeline {
+				position: absolute;
+				background: $brand-white;
+				box-shadow: $box-shadow;
+				width: 1px;
+				margin-top: 9px;
+				height: calc(100% - 18px);
+				z-index: -1;
+			}
+		}
+	}
+}
