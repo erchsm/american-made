@@ -6,7 +6,7 @@ import routes from './routes'
 
 const App = ({ history }) => {
 	return (
-		<ConnectedRouter history={history} basename="/american-made">
+		<ConnectedRouter history={history}>
 			{ routes }
 		</ConnectedRouter>
 	)

@@ -48987,7 +48987,7 @@ var App = function App(_ref) {
 
 	return _react2.default.createElement(
 		_connectedReactRouter.ConnectedRouter,
-		{ history: history, basename: '/american-made' },
+		{ history: history },
 		_routes2.default
 	);
 };
