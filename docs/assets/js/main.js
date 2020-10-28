@@ -49023,7 +49023,8 @@ var _reducers2 = _interopRequireDefault(_reducers);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var history = (0, _history.createBrowserHistory)();
+// const history = createBrowserHistory()
+var history = (0, _history.createBrowserHistory)({ basename: '/american-made' });
 
 var composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || _redux.compose;
 var store = (0, _redux.createStore)((0, _reducers2.default)(history), composeEnhancer((0, _redux.applyMiddleware)((0, _connectedReactRouter.routerMiddleware)(history))));
@@ -51099,9 +51100,13 @@ var routes = _react2.default.createElement(
 	_react2.default.createElement(_reactRouter.Route, { exact: true, path: '/', component: _Landing2.default }),
 	_react2.default.createElement(_reactRouter.Route, { exact: true, path: '/american-made/', component: _Landing2.default }),
 	_react2.default.createElement(_reactRouter.Route, { path: '/video-gallery', component: _VideoGallery2.default }),
+	_react2.default.createElement(_reactRouter.Route, { path: '/american-made/video-gallery', component: _VideoGallery2.default }),
 	_react2.default.createElement(_reactRouter.Route, { path: '/parallax-story', component: _ParallaxStory2.default }),
+	_react2.default.createElement(_reactRouter.Route, { path: '/american-made/parallax-story', component: _ParallaxStory2.default }),
 	_react2.default.createElement(_reactRouter.Route, { path: '/preloader', component: _Preloader2.default }),
-	_react2.default.createElement(_reactRouter.Route, { path: '/navigation', component: _RunwayNavigation.RunwayNav })
+	_react2.default.createElement(_reactRouter.Route, { path: '/american-made/preloader', component: _Preloader2.default }),
+	_react2.default.createElement(_reactRouter.Route, { path: '/navigation', component: _RunwayNavigation.RunwayNav }),
+	_react2.default.createElement(_reactRouter.Route, { path: '/american-made//navigation', component: _RunwayNavigation.RunwayNav })
 );
 
 exports.default = routes;

@@ -34,9 +34,16 @@ const routes = (
 		<Route exact path="/american-made/" component={Landing}/>
 
 		<Route path="/video-gallery" component={VideoGallery}/>
+		<Route path="/american-made/video-gallery" component={VideoGallery}/>
+
 		<Route path="/parallax-story" component={ParallaxStory}/>
+		<Route path="/american-made/parallax-story" component={ParallaxStory}/>
+
 		<Route path="/preloader" component={Preloader}/>
+		<Route path="/american-made/preloader" component={Preloader}/>
+
 		<Route path="/navigation" component={RunwayNav}/>
+		<Route path="/american-made//navigation" component={RunwayNav}/>
 	</Switch>
 )
 
