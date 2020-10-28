@@ -50106,7 +50106,7 @@ var ParallaxStory = function (_Component) {
 								offsetXMin: -getRandomInt(50, 150) * (1 + 1) + 'px',
 								offsetXMax: getRandomInt(50, 150) * (1 + 1) + 'px',
 								slowerScrollRate: true },
-							_react2.default.createElement('img', { id: 'cloud5', src: 'assets/img/_story/s06-cloud5.png' })
+							_react2.default.createElement('img', { id: 'cloud5', src: '../assets/img/_story/s06-cloud5.png' })
 						),
 						_react2.default.createElement(
 							_Parallax.Parallax,
@@ -50114,7 +50114,7 @@ var ParallaxStory = function (_Component) {
 								offsetXMin: -getRandomInt(50, 150) * (1 + 1) + 'px',
 								offsetXMax: getRandomInt(50, 150) * (1 + 1) + 'px',
 								slowerScrollRate: true },
-							_react2.default.createElement('img', { id: 'cloud6', src: 'assets/img/_story/s06-cloud6.png' })
+							_react2.default.createElement('img', { id: 'cloud6', src: '../assets/img/_story/s06-cloud6.png' })
 						),
 						_react2.default.createElement(
 							_Parallax.Parallax,
@@ -50122,12 +50122,12 @@ var ParallaxStory = function (_Component) {
 								offsetXMin: -getRandomInt(50, 150) * (1 + 1) + 'px',
 								offsetXMax: getRandomInt(50, 150) * (1 + 1) + 'px',
 								slowerScrollRate: true },
-							_react2.default.createElement('img', { id: 'cloud7', src: 'assets/img/_story/s06-cloud7.png' })
+							_react2.default.createElement('img', { id: 'cloud7', src: '../assets/img/_story/s06-cloud7.png' })
 						),
 						_react2.default.createElement(
 							'video',
 							{ loop: true, muted: true, autoPlay: true },
-							_react2.default.createElement('source', { src: 'assets/img/_story/s06-fg-plane.webm', type: 'video/webm' })
+							_react2.default.createElement('source', { src: '../assets/img/_story/s06-fg-plane.webm', type: 'video/webm' })
 						)
 					)
 				)
@@ -51022,12 +51022,12 @@ var VideoGallery = function (_Component3) {
         _react2.default.createElement(
           'div',
           { className: 'video-gallery-grid' },
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 1', source: 'assets/img/_videos/videos_bg2.mp4', onclick: this.togglePlayerOpen }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 2', source: 'assets/img/_videos/videos_bg4.mp4', onclick: this.togglePlayerOpen }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 3', source: 'assets/img/_videos/videos_bg5.mp4', onclick: this.togglePlayerOpen }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 4', source: 'assets/img/_videos/videos_bg3.mp4', onclick: this.togglePlayerOpen }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 5', source: 'assets/img/_videos/videos_bg1.mp4', onclick: this.togglePlayerOpen }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 6', source: 'assets/img/_videos/videos_bg0.mp4', onclick: this.togglePlayerOpen })
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 1', source: '../assets/img/_videos/videos_bg2.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 2', source: '../assets/img/_videos/videos_bg4.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 3', source: '../assets/img/_videos/videos_bg5.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 4', source: '../assets/img/_videos/videos_bg3.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 5', source: '../assets/img/_videos/videos_bg1.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 6', source: '../assets/img/_videos/videos_bg0.mp4', onclick: this.togglePlayerOpen })
         ),
         _react2.default.createElement(VideoGalleryPlayer, { isOpen: this.state.playerOpen, closePlayer: this.togglePlayerOpen })
       );
@@ -51098,15 +51098,10 @@ var routes = _react2.default.createElement(
 	_reactRouter.Switch,
 	null,
 	_react2.default.createElement(_reactRouter.Route, { exact: true, path: '/', component: _Landing2.default }),
-	_react2.default.createElement(_reactRouter.Route, { exact: true, path: '/american-made/', component: _Landing2.default }),
 	_react2.default.createElement(_reactRouter.Route, { path: '/video-gallery', component: _VideoGallery2.default }),
-	_react2.default.createElement(_reactRouter.Route, { path: '/american-made/video-gallery', component: _VideoGallery2.default }),
 	_react2.default.createElement(_reactRouter.Route, { path: '/parallax-story', component: _ParallaxStory2.default }),
-	_react2.default.createElement(_reactRouter.Route, { path: '/american-made/parallax-story', component: _ParallaxStory2.default }),
 	_react2.default.createElement(_reactRouter.Route, { path: '/preloader', component: _Preloader2.default }),
-	_react2.default.createElement(_reactRouter.Route, { path: '/american-made/preloader', component: _Preloader2.default }),
-	_react2.default.createElement(_reactRouter.Route, { path: '/navigation', component: _RunwayNavigation.RunwayNav }),
-	_react2.default.createElement(_reactRouter.Route, { path: '/american-made//navigation', component: _RunwayNavigation.RunwayNav })
+	_react2.default.createElement(_reactRouter.Route, { path: '/navigation', component: _RunwayNavigation.RunwayNav })
 );
 
 exports.default = routes;
