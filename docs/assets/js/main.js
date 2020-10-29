@@ -48960,7 +48960,6 @@ if (process.env.NODE_ENV === 'production') {
 }).call(this,require('_process'))
 
 },{"./cjs/value-equal.js":177,"./cjs/value-equal.min.js":178,"_process":74}],180:[function(require,module,exports){
-(function (process){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -48986,7 +48985,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var App = function App(_ref) {
 	var history = _ref.history;
 
-	console.log("This is the process.env", process.env.PUBLIC_URL);
 	return _react2.default.createElement(
 		_connectedReactRouter.ConnectedRouter,
 		{ history: history },
@@ -48996,9 +48994,7 @@ var App = function App(_ref) {
 
 exports.default = App;
 
-}).call(this,require('_process'))
-
-},{"./routes":191,"_process":74,"connected-react-router":12,"prop-types":78,"react":158}],181:[function(require,module,exports){
+},{"./routes":191,"connected-react-router":12,"prop-types":78,"react":158}],181:[function(require,module,exports){
 'use strict';
 
 var _redux = require('redux');
@@ -50110,7 +50106,7 @@ var ParallaxStory = function (_Component) {
 								offsetXMin: -getRandomInt(50, 150) * (1 + 1) + 'px',
 								offsetXMax: getRandomInt(50, 150) * (1 + 1) + 'px',
 								slowerScrollRate: true },
-							_react2.default.createElement('img', { id: 'cloud5', src: '../assets/img/_story/s06-cloud5.png' })
+							_react2.default.createElement('img', { id: 'cloud5', src: 'assets/img/s06-cloud5.png', loading: 'lazy' })
 						),
 						_react2.default.createElement(
 							_Parallax.Parallax,
@@ -50118,7 +50114,7 @@ var ParallaxStory = function (_Component) {
 								offsetXMin: -getRandomInt(50, 150) * (1 + 1) + 'px',
 								offsetXMax: getRandomInt(50, 150) * (1 + 1) + 'px',
 								slowerScrollRate: true },
-							_react2.default.createElement('img', { id: 'cloud6', src: '../assets/img/_story/s06-cloud6.png' })
+							_react2.default.createElement('img', { id: 'cloud6', src: 'assets/img/s06-cloud6.png', loading: 'lazy' })
 						),
 						_react2.default.createElement(
 							_Parallax.Parallax,
@@ -50126,12 +50122,12 @@ var ParallaxStory = function (_Component) {
 								offsetXMin: -getRandomInt(50, 150) * (1 + 1) + 'px',
 								offsetXMax: getRandomInt(50, 150) * (1 + 1) + 'px',
 								slowerScrollRate: true },
-							_react2.default.createElement('img', { id: 'cloud7', src: '../assets/img/_story/s06-cloud7.png' })
+							_react2.default.createElement('img', { id: 'cloud7', src: 'assets/img/s06-cloud7.png', loading: 'lazy' })
 						),
 						_react2.default.createElement(
 							'video',
 							{ loop: true, muted: true, autoPlay: true },
-							_react2.default.createElement('source', { src: '../assets/img/_story/s06-fg-plane.webm', type: 'video/webm' })
+							_react2.default.createElement('source', { src: 'assets/img/s06-fg-plane.webm', type: 'video/webm' })
 						)
 					)
 				)
@@ -51026,12 +51022,12 @@ var VideoGallery = function (_Component3) {
         _react2.default.createElement(
           'div',
           { className: 'video-gallery-grid' },
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 1', source: '/assets/img/_videos/videos_bg2.mp4', onclick: this.togglePlayerOpen }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 2', source: '/assets/img/_videos/videos_bg4.mp4', onclick: this.togglePlayerOpen }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 3', source: '/assets/img/_videos/videos_bg5.mp4', onclick: this.togglePlayerOpen }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 4', source: '/assets/img/_videos/videos_bg3.mp4', onclick: this.togglePlayerOpen }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 5', source: '/assets/img/_videos/videos_bg1.mp4', onclick: this.togglePlayerOpen }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 6', source: '/assets/img/_videos/videos_bg0.mp4', onclick: this.togglePlayerOpen })
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 1', source: 'assets/img/videos_bg2.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 2', source: 'assets/img/videos_bg4.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 3', source: 'assets/img/videos_bg5.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 4', source: 'assets/img/videos_bg3.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 5', source: 'assets/img/videos_bg1.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 6', source: 'assets/img/videos_bg0.mp4', onclick: this.togglePlayerOpen })
         ),
         _react2.default.createElement(VideoGalleryPlayer, { isOpen: this.state.playerOpen, closePlayer: this.togglePlayerOpen })
       );

@@ -32,22 +32,22 @@ export default class ParallaxStory extends Component {
 						offsetXMin={-(getRandomInt(50, 150)) * (1 + 1) + 'px'}
 						offsetXMax={(getRandomInt(50, 150)) * (1 + 1) + 'px'}
 						slowerScrollRate={true}>
-							<img id="cloud5" src="../assets/img/_story/s06-cloud5.png"></img>
+							<img id="cloud5" src="assets/img/s06-cloud5.png" loading="lazy"/>
 						</Parallax>
 						<Parallax
 						offsetXMin={-(getRandomInt(50, 150)) * (1 + 1) + 'px'}
 						offsetXMax={(getRandomInt(50, 150)) * (1 + 1) + 'px'}
 						slowerScrollRate={true}>
-							<img id="cloud6" src="../assets/img/_story/s06-cloud6.png"></img>
+							<img id="cloud6" src="assets/img/s06-cloud6.png" loading="lazy"/>
 						</Parallax>
 						<Parallax
 						offsetXMin={-(getRandomInt(50, 150)) * (1 + 1) + 'px'}
 						offsetXMax={(getRandomInt(50, 150)) * (1 + 1) + 'px'}
 						slowerScrollRate={true}>
-							<img id="cloud7" src="../assets/img/_story/s06-cloud7.png"></img>
+							<img id="cloud7" src="assets/img/s06-cloud7.png" loading="lazy"/>
 						</Parallax>
 						<video loop muted autoPlay>
-							<source src="../assets/img/_story/s06-fg-plane.webm" type="video/webm"></source>
+							<source src="assets/img/s06-fg-plane.webm" type="video/webm"></source>
 						</video>
 					</main>
 				</ParallaxProvider>

@@ -4,7 +4,7 @@
 	background-image: linear-gradient(to bottom, #7DE2FC 0%, #ffecd2 80%);
 	min-height: 300vh;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 
 	&:before {
@@ -47,7 +47,7 @@
 	}
 
 	.#{$jumbo-ring-classname} {
-		margin: 0 auto;
-		transform: translateY(-50vh);
+		margin: 50vh auto;
+		transform: translateY(-50%);
 	}
 }
