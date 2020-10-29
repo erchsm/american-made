@@ -18,8 +18,9 @@ module.exports = {
 		browserSync: {
 			server: {
 				baseDir: "./docs",
-				middleware: [historyApiFallback()]
-			}
+				middleware: [ historyApiFallback() ]
+			},
+			open: false
 		},
 		node: {
 			src: 'js/*',
