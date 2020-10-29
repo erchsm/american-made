@@ -51022,12 +51022,12 @@ var VideoGallery = function (_Component3) {
         _react2.default.createElement(
           'div',
           { className: 'video-gallery-grid' },
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 1', onclick: this.togglePlayerOpen, source: '//american-made-a.nbcuxlab.com/img/_videos/videos_bg2.mp4' }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 2', onclick: this.togglePlayerOpen, source: '//american-made.nbcuxlab.com/design-guide/img/gallery/3.mp4' }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 3', onclick: this.togglePlayerOpen, source: '//american-made.nbcuxlab.com/design-guide/img/gallery/4.mp4' }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 4', onclick: this.togglePlayerOpen, source: '//american-made-a.nbcuxlab.com/img/_videos/videos_bg3.mp4' }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 5', onclick: this.togglePlayerOpen, source: '//american-made-a.nbcuxlab.com/img/_videos/videos_bg1.mp4' }),
-          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 6', onclick: this.togglePlayerOpen, source: '//american-made-a.nbcuxlab.com/img/_videos/videos_bg0.mp4' })
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 1', source: '/assets/img/_videos/videos_bg2.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 2', source: '/assets/img/_videos/videos_bg4.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 3', source: '/assets/img/_videos/videos_bg5.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 4', source: '/assets/img/_videos/videos_bg3.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 5', source: '/assets/img/_videos/videos_bg1.mp4', onclick: this.togglePlayerOpen }),
+          _react2.default.createElement(VideoGalleryItem, { title: 'Trailer 6', source: '/assets/img/_videos/videos_bg0.mp4', onclick: this.togglePlayerOpen })
         ),
         _react2.default.createElement(VideoGalleryPlayer, { isOpen: this.state.playerOpen, closePlayer: this.togglePlayerOpen })
       );
