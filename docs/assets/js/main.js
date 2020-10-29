@@ -48960,6 +48960,7 @@ if (process.env.NODE_ENV === 'production') {
 }).call(this,require('_process'))
 
 },{"./cjs/value-equal.js":177,"./cjs/value-equal.min.js":178,"_process":74}],180:[function(require,module,exports){
+(function (process){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -48985,6 +48986,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var App = function App(_ref) {
 	var history = _ref.history;
 
+	console.log("This is the process.env", process.env.PUBLIC_URL);
 	return _react2.default.createElement(
 		_connectedReactRouter.ConnectedRouter,
 		{ history: history },
@@ -48994,8 +48996,9 @@ var App = function App(_ref) {
 
 exports.default = App;
 
-},{"./routes":191,"connected-react-router":12,"prop-types":78,"react":158}],181:[function(require,module,exports){
-(function (process){
+}).call(this,require('_process'))
+
+},{"./routes":191,"_process":74,"connected-react-router":12,"prop-types":78,"react":158}],181:[function(require,module,exports){
 'use strict';
 
 var _redux = require('redux');
@@ -49025,7 +49028,7 @@ var _reducers2 = _interopRequireDefault(_reducers);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // const history = createBrowserHistory()
-var history = (0, _history.createBrowserHistory)({ basename: process.env.PUBLIC_URL });
+var history = (0, _history.createBrowserHistory)({ basename: '/american-made' });
 
 var composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || _redux.compose;
 var store = (0, _redux.createStore)((0, _reducers2.default)(history), composeEnhancer((0, _redux.applyMiddleware)((0, _connectedReactRouter.routerMiddleware)(history))));
@@ -49040,9 +49043,7 @@ var render = function render() {
 
 render();
 
-}).call(this,require('_process'))
-
-},{"../App":180,"../reducers":185,"_process":74,"connected-react-router":12,"history":58,"react":158,"react-dom":82,"react-redux":116,"redux":159}],182:[function(require,module,exports){
+},{"../App":180,"../reducers":185,"connected-react-router":12,"history":58,"react":158,"react-dom":82,"react-redux":116,"redux":159}],182:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {

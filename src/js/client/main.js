@@ -8,7 +8,7 @@ import App from '../App'
 import rootReducer from '../reducers'
 
 // const history = createBrowserHistory()
-const history = createBrowserHistory({ basename: process.env.PUBLIC_URL })
+const history = createBrowserHistory({ basename: '/american-made' })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 const store = createStore(
