@@ -232,12 +232,12 @@ export default class VideoGallery extends Component {
       <div className={classnames}>
         <h1>Videos</h1>
         <div className="video-gallery-grid">
-        <VideoGalleryItem title="Trailer 1" source="../assets/img/_videos/videos_bg2.mp4" onclick={this.togglePlayerOpen}/>
-        <VideoGalleryItem title="Trailer 2" source="../assets/img/_videos/videos_bg4.mp4" onclick={this.togglePlayerOpen}/>
-        <VideoGalleryItem title="Trailer 3" source="../assets/img/_videos/videos_bg5.mp4" onclick={this.togglePlayerOpen}/>
-        <VideoGalleryItem title="Trailer 4" source="../assets/img/_videos/videos_bg3.mp4" onclick={this.togglePlayerOpen}/>
-        <VideoGalleryItem title="Trailer 5" source="../assets/img/_videos/videos_bg1.mp4" onclick={this.togglePlayerOpen}/>
-        <VideoGalleryItem title="Trailer 6" source="../assets/img/_videos/videos_bg0.mp4" onclick={this.togglePlayerOpen}/>
+        <VideoGalleryItem title="Trailer 1" source="//erchsm.github.io/american-made/assets/img/_videos/videos_bg2.mp4" onclick={this.togglePlayerOpen}/>
+        <VideoGalleryItem title="Trailer 2" source="//erchsm.github.io/american-made/assets/img/_videos/videos_bg4.mp4" onclick={this.togglePlayerOpen}/>
+        <VideoGalleryItem title="Trailer 3" source="//erchsm.github.io/american-made/assets/img/_videos/videos_bg5.mp4" onclick={this.togglePlayerOpen}/>
+        <VideoGalleryItem title="Trailer 4" source="//erchsm.github.io/american-made/assets/img/_videos/videos_bg3.mp4" onclick={this.togglePlayerOpen}/>
+        <VideoGalleryItem title="Trailer 5" source="//erchsm.github.io/american-made/assets/img/_videos/videos_bg1.mp4" onclick={this.togglePlayerOpen}/>
+        <VideoGalleryItem title="Trailer 6" source="//erchsm.github.io/american-made/assets/img/_videos/videos_bg0.mp4" onclick={this.togglePlayerOpen}/>
         </div>
         <VideoGalleryPlayer isOpen={this.state.playerOpen} closePlayer={this.togglePlayerOpen}/>
       </div>
